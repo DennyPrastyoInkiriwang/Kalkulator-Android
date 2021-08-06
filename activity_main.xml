@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/buttonBagi"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDua"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDua"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonBagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:text="/"
+        app:layout_constraintEnd_toStartOf="@+id/buttonKali"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDua"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonKali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:text="x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDua"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextSatu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnknownId" />
+
+    <EditText
+        android:id="@+id/editTextDua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSatu" />
+
+    <TextView
+        android:id="@+id/textViewHasil"
+        android:layout_width="231dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="180dp"
+        android:text="Hasil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDua"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Clear"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHasil"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="161dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
